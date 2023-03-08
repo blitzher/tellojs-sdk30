@@ -1,16 +1,19 @@
-const controlCommands = require('./commands/control'),
-readCommands = require('./commands/read')
-setCommands = require('./commands/set')
-stateStream = require('./streams/state')
-videoStream = require('./streams/video')
+const controlCommands = require("./commands/control"),
+    readCommands = require("./commands/read"),
+    setCommands = require("./commands/set"),
+    stateStream = require("./streams/state"),
+    videoStream = require("./streams/video"),
+    commander = require("./exchanger");
 
-
-module.exports = { 
-    control: controlCommands,
-    read: readCommands,
-    set: setCommands,
-    receiver: {
-        state: stateStream,
-        video: videoStream
-    }
- }
+module.exports = {
+    sdk: {
+        control: controlCommands,
+        read: readCommands,
+        set: setCommands,
+        receiver: {
+            state: stateStream,
+            video: videoStream,
+        },
+        command: (arg) => commander.send(arg),
+    },
+};

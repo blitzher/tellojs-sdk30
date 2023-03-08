@@ -1,23 +1,37 @@
-const commander = require('../exchanger')
+const commander = require("../exchanger");
 
-const speed = () => commander.send('speed?')
+const speed = () => commander.send("speed?");
 
-const battery = () => commander.send('battery?')
+const battery = () => commander.send("battery?");
 
-const time = () => commander.send('time?')
+const time = () => commander.send("time?");
 
-const height = () => commander.send('height?')
+const height = () => commander.send("height?");
 
-const temperature = () => commander.send('temp?')
+const temperature = () => commander.send("temp?");
 
-const attitude = () => commander.send('attitude?')
+const attitude = () => commander.send("attitude?");
 
-const barometer = () => commander.send('baro?')
+const barometer = () => commander.send("baro?");
 
-const acceleration = () => commander.send('acceleration?')
+const acceleration = () => commander.send("acceleration?");
 
-const tof = () => commander.send('tof?')
+const tof = () => commander.send("tof?");
 
-const wifi = () => commander.send('wifi?')
+const wifi = () => commander.send("wifi?");
 
-module.exports = { speed, battery, time, wifi, height, temperature, attitude, barometer, tof, acceleration }
+const sdk = () => command.send("sdk?");
+
+module.exports = {
+    speed,
+    battery,
+    time,
+    wifi,
+    height,
+    temperature,
+    attitude,
+    barometer,
+    tof,
+    acceleration,
+    sdk,
+};
