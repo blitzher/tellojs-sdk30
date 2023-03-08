@@ -18,6 +18,7 @@
         "drone",
         "iot"
     ],
+    "types": "types/index.d.ts",
     "repository": "git@github.com:kanekotic/tellojs.git",
     "author": "kanekotic <alvarojosepl@gmail.com>",
     "license": "MIT",
