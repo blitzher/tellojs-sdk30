@@ -20,7 +20,7 @@ const tof = () => commander.send("tof?");
 
 const wifi = () => commander.send("wifi?");
 
-const sdk = () => command.send("sdk?");
+const sdk = () => commander.send("sdk?");
 
 module.exports = {
     speed,
