@@ -45,7 +45,6 @@ declare interface SDK {
             front: () => Promise<string>;
             back: () => Promise<string>;
         };
-        command: (cmd: string) => Promise<string>;
     };
     read: {
         speed: () => Promise<string>;
